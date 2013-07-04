@@ -1,4 +1,4 @@
-Asterix
+Asterix Project
 =======
 A web application which helps people understand GIT.
 
