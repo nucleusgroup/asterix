@@ -8,3 +8,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, molestias, nece
 
 ## Version
 * 0.0.1
+* 0.0.2
