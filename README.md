@@ -1,4 +1,4 @@
-Asterix
+Asterix Project
 =======
 A web application which helps people understand GIT.
 
@@ -8,3 +8,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, molestias, nece
 
 ## Version
 * 0.0.1
+*0.0.20
