@@ -9,11 +9,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, molestias, nece
 
 hai welcome to git hub.............
 hai welcome to asterix..
-yuiiioo0koopk,ml,
+
 
 
 ## Version
 * 0.0.1
 * 0.0.2
-* 0.0.3
-* 0.0.4
+
