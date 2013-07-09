@@ -11,6 +11,7 @@ New file
 		Password: <input type="password" name="password">{{ $errors->first('password','<span class="error">:message</span>')}}<br/>
 		<input type="submit" name="signup" value="submit" >
 		<input type="reset" name="reset" value="reset">
+		<input type="shiva" name="shiva" value="shiva">
 		</form>
 </body>
 </html>
