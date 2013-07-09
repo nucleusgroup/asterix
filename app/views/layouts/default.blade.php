@@ -63,7 +63,7 @@
                                 <li {{ (Request::is('account/login') ? 'class="active"' : '') }}><a href="{{ URL::to('account/login') }}">Login</a></li>
                                 <li {{ (Request::is('account/register') ? 'class="active"' : '') }}><a href="{{ URL::to('account/register') }}">Register</a></li>
                                 <li >
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-product"></i>Products <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li {{ (Request::is('account/pmp') ? 'class="active"' : '') }}><a href="{{ URL::to('account/pmp') }}">PMP</a></li>
                                         <li {{ (Request::is('account/agile') ? 'class="active"' : '') }}><a href="{{ URL::to('account/agile') }}">Agile</a></li>

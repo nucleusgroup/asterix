@@ -2,13 +2,12 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
-{
+class CreateUsersTable extends Migration {
+
 	/**
 	 * Run the migrations.
 	 *
-	 * @access   public
-	 * @return   void
+	 * @return void
 	 */
 	public function up()
 	{
@@ -28,11 +27,11 @@ class CreateUsersTable extends Migration
 	/**
 	 * Reverse the migrations.
 	 *
-	 * @access   public
-	 * @return   void
+	 * @return void
 	 */
 	public function down()
 	{
 		Schema::drop('users');
 	}
+
 }
