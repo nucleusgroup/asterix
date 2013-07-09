@@ -11,6 +11,8 @@
 <div class="page-header">
 	<h1> PMP </h1>
 </div>
-<p></p>
+<p>PMI’s Project Management Professional (PMP)® credential is the most important industry-recognized certification for project managers. 
+	Globally recognized and demanded, the PMP® demonstrates that you have the experience, education and competency to successfully lead and direct projects.</p>
+<p>Our vision is to help further the Best Global Practices relating to Project Management Consulting and Certification Assistance and grow into the largest Global Network of Consultants in the arena of Project Management. </p>
 
 @stop
