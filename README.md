@@ -20,3 +20,12 @@ hai welcome to demo..
 * 0.0.1
 * 0.0.2
 
+
+
+
+
+features:
+code reusability
+no server burden 
+less code
+less time complexity
