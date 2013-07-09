@@ -12,7 +12,11 @@ class AccountController extends AuthorizedController
 		'getLogin',
 		'postLogin',
 		'getRegister',
-		'postRegister'
+		'postRegister',
+		'getPmp',
+		'getAbout',
+		'getAgile'
+		
 	);
 
 	/**
@@ -240,4 +244,56 @@ class AccountController extends AuthorizedController
 		//
 		return Redirect::to('account/login')->with('success', 'Logged out with success!');
 	}
+
+	public function getPmp()
+	{		
+
+		// Redirect to the users page.
+		
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/pmp')->with('success', 'PMP success!!');
+		}*/
+
+		// Show the page.
+		//
+		return View::make('account/pmp');
+		//
+		
+	}
+	
+
+	public function getAbout()
+	{		
+
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/about')->with('success', 'About success!!');
+		}
+*/
+		// Show the page.
+		//
+		return View::make('account/about');
+		
+		// Redirect to the users page.
+		
+	}
+   public function getAgile()
+	{		
+
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/about')->with('success', 'About success!!');
+		}
+*/
+		// Show the page.
+		//
+		return View::make('account/agile');
+		
+		// Redirect to the users page.
+		
+	}
+
+
 }
+

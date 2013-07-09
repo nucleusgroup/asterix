@@ -3,9 +3,12 @@
 {{-- Web site Title --}}
 @section('title')
 @parent
-:: Home
+:: About
 @stop
 
+{{-- Content --}}
 @section('content')
-<h1>Hello Asterix!</h1>
+<div class="page-header">
+	<h1>About</h1>
+</div>
 @stop
