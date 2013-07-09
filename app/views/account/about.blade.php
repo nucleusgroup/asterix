@@ -3,14 +3,12 @@
 {{-- Web site Title --}}
 @section('title')
 @parent
-:: Products
+:: About
 @stop
 
 {{-- Content --}}
 @section('content')
 <div class="page-header">
-	<h1> PMP </h1>
+	<h1>About</h1>
 </div>
-<p></p>
-
 @stop
