@@ -8,6 +8,7 @@ p { background:yellow; }
 </head>
 <body>
 <button>Showit</button>
+<button>Removeit</button>
 <p style="display:none">Hello Naveen! hello  How r u </p>
 <script>
 $("button").click(function () {
