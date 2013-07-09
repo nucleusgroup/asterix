@@ -36,7 +36,9 @@
 </tr>
 <tr>
 <td width="30" valign="middle">EmailId:</td>
-<td><input type="text" name="email" size=25 maxlength=30/></td>
+<td><input type="text" name="email" size=25 maxlength=30/>
+{{$errors->first('email, '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">PassWord:</td>
