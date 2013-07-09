@@ -1,7 +1,7 @@
 
 <html>
-<body>
-<h1>Registration Page</h1>
+<body bgcolor="cyan">
+<h1>REGISTRATION PAGE</h1>
 <form method="post"  name="RegistrationForm" enctype="multipart/form-data">
  <table width="40%" bgcolor="#efee82" >
 <tr>
@@ -59,7 +59,10 @@
 </tr>
 <tr>
 <td>
-<input type="submit" name="submit" value="submit"   />
+<input type="submit" name="submit" value="SUBMIT"   />
+</td>
+<td>
+<input type="reset" name="reset" value="RESET"   />
 </td>
 </tr>
 </table>
