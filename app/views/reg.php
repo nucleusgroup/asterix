@@ -6,23 +6,33 @@
  <table width="40%" bgcolor="#efee82" >
 <tr>
 <td width="30" >First Name*:</td>
-<td><input type="text" name="Fname" id="fName" size=25 maxlength=35 /></td>
+<td><input type="text" name="Fname" id="fName" size=25 maxlength=35 />
+{{$errors->first('Fname', '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">Last Name*:</td>
-<td><input type="text" name="Lname" id="lName" size=25 maxlength=15/></td>
+<td><input type="text" name="Lname" id="lName" size=25 maxlength=15/>
+{{$errors->first('Lname', '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">Father Name*:</td>
-<td><input type="text" name="FatherName" id="FaName" size=25 maxlength=30/></td>
+<td><input type="text" name="FatherName" id="FaName" size=25 maxlength=30/>
+{{$errors->first('FatherName', '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">Address:</td>
-<td><input type="text" name="address" size=25 maxlength=30/></td>
+<td><input type="text" name="address" size=25 maxlength=30/>
+{{$errors->first('address', '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">Mobile No:</td>
-<td><input type="text" name="mobile" size=25 /></td>
+<td><input type="text" name="mobile" size=25 />
+{{$errors->first('moblie', '<span class="error">:message</span>')}}
+</td>
 </tr>
 <tr>
 <td width="30" valign="middle">EmailId:</td>
