@@ -9,6 +9,12 @@
 {{-- Content --}}
 @section('content')
 <div class="page-header">
-	<h1>About</h1>
+	
+ <img src="/assets/images/rocket2.png" />
+
+<hgroup>
+    <h1>ASTERIX</h1>
+    <h2>Coming Soon To Help You.</h2>
+</hgroup>
 </div>
 @stop
