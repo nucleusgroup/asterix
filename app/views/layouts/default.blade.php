@@ -21,7 +21,7 @@
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 
         <!-- Images -->
-        <link rel="logo" sizes="144x58" href="{{ asset('assets/images/nucleus.png') }}">
+        <link rel="logo" sizes="144x58" href="{{ asset('assets/images/logo.gif.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets/images/apple-touch-icon-144-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72-precomposed.png') }}">
@@ -69,7 +69,7 @@ body {
                     <div class="nav-collapse collapse">
                         <ul class="nav">
 
-                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/nucleus.png"/> </a></li>
+                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/logo.gif.png"/> </a></li>
 
                             
 
