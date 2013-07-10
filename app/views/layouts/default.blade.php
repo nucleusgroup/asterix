@@ -48,7 +48,7 @@
 
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/vendor/img/nucleus.jpg"></a></li>
+                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/nucleus.png"></a></li>
                         </ul>
 
                         <ul class="nav pull-right">
