@@ -64,6 +64,16 @@
 		</div>
 	</div>
 	<!-- ./ password confirm -->
+	
+	<!-- mobile included -->
+    <div class="control-group {{ $errors->has('mobile') ? 'error' : '' }}">
+		<label class="control-label" for="mobile">Mobile no</label>
+		<div class="controls">
+			<input type="text" name="mobile" id="mobile" value="" />
+			{{ $errors->first('mobile', '<span class="help-inline">:message</span>') }}
+		</div>
+	</div>
+
 
 	<!-- Signup button -->
 	<div class="control-group">
