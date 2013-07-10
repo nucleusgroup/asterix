@@ -25,15 +25,16 @@
 	</div>
 	<!-- ./ first name -->
 
+
 	<!-- middle Name -->
 	<div class="control-group {{ $errors->has('middle_name') ? 'error' : '' }}">
-		<label class="control-label" for="middle_name">Middle Name</label>
+		<label class="control-label" for="middle_name">First Name</label>
 		<div class="controls">
 			<input type="text" name="middle_name" id="middle_name" value="{{ Request::old('middle_name') }}" />
 			{{ $errors->first('middle_name', '<span class="help-inline">:message</span>') }}
 		</div>
 	</div>
-	<!-- ./middle name -->
+	<!-- ./ middle name -->
 
 
 	<!-- Last Name -->
@@ -45,6 +46,8 @@
 		</div>
 	</div>
 	<!-- ./ last name -->
+
+
 
 	<!-- Email -->
 	<div class="control-group {{ $errors->has('email') ? 'error' : '' }}">
@@ -66,26 +69,15 @@
 	</div>
 	<!-- ./ password -->
 
-	<!-- Password Confirm -->
-	<div class="control-group {{ $errors->has('password_confirmation') ? 'error' : '' }}">
-		<label class="control-label" for="password_confirmation">Password Confirm</label>
+	<!-- mobileno  -->
+	<div class="control-group {{ $errors->has('mobileno') ? 'error' : '' }}">
+		<label class="control-label" for="mobileno">First Name</label>
 		<div class="controls">
-			<input type="password" name="password_confirmation" id="password_confirmation" value="" />
-			{{ $errors->first('password_confirmation', '<span class="help-inline">:message</span>') }}
+			<input type="text" name="mobileno" id="mobileno" value="{{ Request::old('mobileno') }}" />
+			{{ $errors->first('mobileno', '<span class="help-inline">:message</span>') }}
 		</div>
 	</div>
-	<!-- ./ password confirm -->
-
-	<!-- mobile  -->
-    <div class="control-group {{ $errors->has('mobile') ? 'error' : '' }}">
-		<label class="control-label" for="mobile">Mobile no</label>
-		<div class="controls">
-			<input type="text" name="mobile" id="mobile" value="" />
-			{{ $errors->first('mobile', '<span class="help-inline">:message</span>') }}
-		</div>
-	</div>
-     
-     <!-- /. mobile -->
+	<!-- ./ first name -->
 
 	<!-- Signup button -->
 	<div class="control-group">
