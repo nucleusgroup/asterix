@@ -21,6 +21,7 @@
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 
         <!-- Images -->
+        <link rel="logo" sizes="144x58" href="{{ asset('assets/images/logo.gif.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets/images/apple-touch-icon-144-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72-precomposed.png') }}">
@@ -48,13 +49,14 @@
 
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/vendor/img/nucleus.jpg"></a></li>
+                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/logo.gif.png"/> </a></li>
                         </ul>
 
                         <ul class="nav pull-right">
                             @if (Auth::check())
                                 <li class="navbar-text">Logged in as {{ Auth::user()->fullName() }}</li>
                                 <li class="divider-vertical"></li>
+                                <li {{ (Request::is('account/home1') ? 'class="active"' : '') }}><a href="{{ URL::to('account/home1') }}"><i class="icon-home"></i> Home</a></li>
                                 <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Account</a></li>
                                 <li><a href="{{ URL::to('account/logout') }}">Logout</a></li>
                             @else
@@ -92,6 +94,7 @@
             <!-- ./ content -->
         </div>
         <!-- ./ container -->
+
 
         <!-- jQuery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

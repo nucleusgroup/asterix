@@ -9,7 +9,7 @@
 {{-- Content --}}
 @section('content')
 <div class="page-header">
-<<<<<<< HEAD
+
 	<h1> Agile </h1>
 </div>
 <p>Agile is a topic of growing importance in Project Management. 
@@ -18,11 +18,11 @@
 	<p>The use of agile as an approach to managing projects has been increasing dramatically over the last several years. 
 		PMI’s research has shown that the use of agile has tripled from December 2008 to May 2011. Furthermore, research demonstrates the value that agile can have in decreasing product defects, improving team productivity, and increasing delivery of business value. 
 		The PMI-ACP is positioned to recognize and validate knowledge of this important approach.</p>
-=======
-	<h1> AGILE</h1>
-	<p></p>	
+
+
+	
 </div>
 
->>>>>>> 42ac5b67c38940642c61df27978f849a10939d38
+
 
 @stop

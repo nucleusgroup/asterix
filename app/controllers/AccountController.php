@@ -15,7 +15,8 @@ class AccountController extends AuthorizedController
 		'postRegister',
 		'getPmp',
 		'getAbout',
-		'getAgile'
+		'getAgile',
+		'getHome1'
 		
 	);
 
@@ -148,7 +149,7 @@ class AccountController extends AuthorizedController
 			{
 				// Redirect to the users page.
 				//
-				return Redirect::to('account')->with('success', 'You have logged in successfully');
+				return Redirect::to('account/home1')->with('success', 'You have logged in successfully');
 			}
 			else
 			{
@@ -293,6 +294,22 @@ class AccountController extends AuthorizedController
 		// Redirect to the users page.
 		
 	}
+	   public function getHome1()
+	{		
+
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/about')->with('success', 'About success!!');
+		}
+*/
+		// Show the page.
+		//
+		return View::make('account/home1');
+		
+		// Redirect to the users page.
+		
+	}
+	
 
 
 }

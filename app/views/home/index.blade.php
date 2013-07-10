@@ -7,5 +7,9 @@
 @stop
 
 @section('content')
-<h1>Hello Asterix!</h1>
+<div class="page-header">
+	<h4>Hello Asterix!</h4>
+</div>
+
+
 @stop
