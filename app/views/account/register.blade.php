@@ -25,17 +25,6 @@
 	</div>
 	<!-- ./ first name -->
 
-	<!-- middle Name -->
-	<div class="control-group {{ $errors->has('middle_name') ? 'error' : '' }}">
-		<label class="control-label" for="middle_name">Middle Name</label>
-		<div class="controls">
-			<input type="text" name="middle_name" id="middle_name" value="{{ Request::old('middle_name') }}" />
-			{{ $errors->first('middle_name', '<span class="help-inline">:message</span>') }}
-		</div>
-	</div>
-	<!-- ./middle name -->
-
-
 	<!-- Last Name -->
 	<div class="control-group {{ $errors->has('last_name') ? 'error' : '' }}">
 		<label class="control-label" for="last_name">Last Name</label>
@@ -75,17 +64,6 @@
 		</div>
 	</div>
 	<!-- ./ password confirm -->
-
-	<!-- mobile  -->
-    <div class="control-group {{ $errors->has('mobile') ? 'error' : '' }}">
-		<label class="control-label" for="mobile">Mobile no</label>
-		<div class="controls">
-			<input type="text" name="mobile" id="mobile" value="" />
-			{{ $errors->first('mobile', '<span class="help-inline">:message</span>') }}
-		</div>
-	</div>
-     
-     <!-- /. mobile -->
 
 	<!-- Signup button -->
 	<div class="control-group">
