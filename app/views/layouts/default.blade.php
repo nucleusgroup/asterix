@@ -28,7 +28,26 @@
 
         <!-- ICO -->
         <link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">
 
+
+html { height: 100% }
+body {
+    background-color: #dddddd;
+    background-image: -webkit-gradient(radial, 50% 0%,100,50% 150%,100, from(#333333), to(#dddddd));
+    background-image: -webkit-radial-gradient(50% 100%, #dddddd, #333333);
+    background-image: -moz-radial-gradient(50% 100%, #dddddd, #333333);
+    background-image: -o-radial-gradient(50% 100%, #dddddd, #333333);
+    background-image: -ms-radial-gradient(50% 100%, #dddddd, #333333);
+    background-image: radial-gradient(50% 100%, #dddddd, #333333);
+    color: #fff;
+    overflow: hidden;
+    height: 100%;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+
+</style>
 
     </head>
     <body>
