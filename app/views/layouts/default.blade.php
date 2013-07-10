@@ -80,7 +80,7 @@ body {
                                 <li class="navbar-text">Logged in as {{ Auth::user()->fullName() }}</li>
                                 <li class="divider-vertical"></li>
                                 <li {{ (Request::is('account/home1') ? 'class="active"' : '') }}><a href="{{ URL::to('account/home1') }}"><i class="icon-home"></i> Home</a></li>
-                                <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Account</a></li>
+                                <li {{ (Request::is('account') ? 'class="active"' : '') }}><a href="{{ URL::to('account') }}">Update</a></li>
                                 <li><a href="{{ URL::to('account/logout') }}">Logout</a></li>
                             @else
                                 <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i class="icon-home"></i> Home</a></li>
