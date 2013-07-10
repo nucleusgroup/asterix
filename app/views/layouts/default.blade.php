@@ -71,7 +71,7 @@ body {
 
                             <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/logo.gif.png"/> </a></li>
 
-                            <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i></i><img src="/assets/images/nucleus.png"></a></li>
+                            
 
                         </ul>
 
