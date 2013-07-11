@@ -16,7 +16,8 @@ class AccountController extends AuthorizedController
 		'getPmp',
 		'getAbout',
 		'getAgile',
-		'getHome1'
+		'getHome1',
+		'getSimulate'
 		
 	);
 
@@ -309,6 +310,22 @@ class AccountController extends AuthorizedController
 		// Redirect to the users page.
 		
 	}
+	public function getSimulate()
+	{		
+
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/about')->with('success', 'About success!!');
+		}
+*/
+		// Show the page.
+		//
+		return View::make('account/home1');
+		
+		// Redirect to the users page.
+		
+	}
+	
 	
 
 

@@ -115,9 +115,14 @@ body {
             <!-- Content -->
             @yield('content')
             <!-- ./ content -->
+           
+            <div class="footer">
+                   <p>@copy rights reserved</p>
+        </div>
+
         </div>
         <!-- ./ container -->
-
+            
 
         <!-- jQuery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
