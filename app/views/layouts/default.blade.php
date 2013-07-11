@@ -16,6 +16,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('assets/styles/css/main.css')}} ">
+        <link rel="stylesheet" href="{{ asset('assets/styles/css/slidder.css')}} ">
 
         <!-- JS -->
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
@@ -42,7 +43,7 @@ body {
        background-image: -ms-radial-gradient(50% 100%, #dddddd, #333333);
        background-image: radial-gradient(50% 100%, #dddddd, #333333);
        color:#fff;
-       overflow: hidden;
+       overflow: scroll;
        height: 100%;
        -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
