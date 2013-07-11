@@ -107,7 +107,7 @@ class AccountController extends AuthorizedController
 		//
 		if (Auth::check())
 		{
-			return Redirect::to('account');
+			return Redirect::to('account/home1');
 		}
 
 		// Show the page.

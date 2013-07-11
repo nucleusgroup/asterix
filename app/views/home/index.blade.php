@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="page-header">
-	<h4>Hello Asterix!</h4>
+	<h1>Hello Asterix!</h1>
 </div>
 
 
