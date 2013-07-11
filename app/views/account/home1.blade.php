@@ -46,19 +46,19 @@
                         </div>
                     </div>
                 </div>
+                 
                 <div class="span3">
                     <p>PLAYJECT combines the core elements of project management body of knowledge and global best practices in Project Management as espoused by PMI (Project Management Institute) with a game based experiential learning to enhance project management skills.
                     </p>
                 </div>
-            
 
-                <div class="btn_right" align="center">
-                    <!--<input name="pre2" value="View document" class="btn btn_right_btn" type="button" />-->
-                    <input name="pre" value="Hide text" class="btnright2 btn_right_btn" type="button" id="showhide" onClick="showhidetext()" />
-
-                </div>	
             </div>
-      
+
+            <div class="btn_right" align="center">
+                <!--<input name="pre2" value="View document" class="btn btn_right_btn" type="button" />-->
+                <input name="pre" value="Hide text" class="btnright2 btn_right_btn" type="button" id="showhide" onClick="showhidetext()" />
+            </div> 
+
         </div>
     </div>
 </div>
