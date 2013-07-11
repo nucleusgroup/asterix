@@ -35,9 +35,11 @@
                 </p>
                 <p>PLAYJECT combines the core elements of project management body of knowledge and global best practices in Project Management as espoused by PMI (Project Management Institute) with a game based experiential learning to enhance project management skills.
                 </p>
-                <p>PLAYJECT combines the core elements of project management body of knowledge and global best practices in Project Management as espoused by PMI (Project Management Institute) with a game based experiential learning to enhance project management skills.
-                </p>
+                
+            </div>
+            <div class="row-fluid">
 
+            </div>
 		</div>
 		<div class="btn_right">
             <!--<input name="pre2" value="View document" class="btn btn_right_btn" type="button" />-->
