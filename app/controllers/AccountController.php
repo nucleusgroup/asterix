@@ -17,7 +17,8 @@ class AccountController extends AuthorizedController
 		'getAbout',
 		'getAgile',
 		'getHome1',
-		'getSimulate'
+		'getSimulate',
+		'getGame'
 		
 	);
 
@@ -326,7 +327,21 @@ class AccountController extends AuthorizedController
 		
 	}
 	
-	
+public function getGame()
+	{		
+
+		/*if (Auth::check())
+		{
+			return Redirect::to('account/game')->with('success', 'About success!!');
+		}
+*/
+		// Show the page.
+		//
+		return View::make('account/game');
+		
+		// Redirect to the users page.
+		
+	}	
 
 
 }

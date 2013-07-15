@@ -29,7 +29,7 @@
         <div id="slideshow-inner">
             <ul>
                 <li id="slide1">
-                    <img src="/assets/images/git.png" />
+                    <img src="/assets/images/gitlogo.png" />
                     <div class="description">
                         <input type="checkbox" id="show-description-1"/>
                         <label for="show-description-1" class="show-description-label">I</label>
@@ -40,7 +40,7 @@
                     </div>
                 </li>
                 <li id="slide2">
-                    <img src="/assets/images/git-transport.png" />
+                    <img src="/assets/images/flow.png" />
                     <div class="description">
                         <input type="checkbox" id="show-description-2"/>
                         <label for="show-description-2" class="show-description-label">I</label>
@@ -51,7 +51,7 @@
                     </div>
                 </li>
                 <li id="slide3">
-                    <img src="/assets/images/git_trees.png" />
+                    <img src="/assets/images/gitdad.jpg" />
                     <div class="description">
                         <input type="checkbox" id="show-description-3"/>
                         <label for="show-description-3" class="show-description-label">I</label>

@@ -14,4 +14,3 @@
 Route::controller('account', 'AccountController');
 
 Route::controller('/', 'HomeController');
-

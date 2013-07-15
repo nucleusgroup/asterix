@@ -20,7 +20,9 @@
 
         <!-- JS -->
         <script src="{{ asset('assets/scripts/js/vendor/modernizr-2.6.2.min.js') }}"></script>
-
+        <script src="{{asset('assets/scripts/js/vendor/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/scripts/js/vendor/md5.js')}}"></script>
+         <script src="{{asset('assets/scripts/js/vendor/main.js')}}"></script>
         <!-- Images -->
         <link rel="logo" sizes="144x58" href="{{ asset('assets/images/logo.gif.png') }}">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets/images/apple-touch-icon-144-precomposed.png') }}">
@@ -87,12 +89,15 @@ body {
                                 <li {{ (Request::is('/') ? 'class="active"' : '') }}><a href="{{ URL::to('') }}"><i class="icon-home"></i> Home</a></li>
                                 <li {{ (Request::is('account/about') ? 'class="active"' : '') }}><a href="{{ URL::to('account/about') }}">About</a></li>
                                 <li {{ (Request::is('account/login') ? 'class="active"' : '') }}><a href="{{ URL::to('account/login') }}">Login</a></li>
+                                
+                                
                                 <li {{ (Request::is('account/register') ? 'class="active"' : '') }}><a href="{{ URL::to('account/register') }}">Register</a></li>
                                 <li >
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-product"></i>Products <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li {{ (Request::is('account/pmp') ? 'class="active"' : '') }}><a href="{{ URL::to('account/pmp') }}">PMP</a></li>
                                         <li {{ (Request::is('account/agile') ? 'class="active"' : '') }}><a href="{{ URL::to('account/agile') }}">Agile</a></li>
+                                     <li {{ (Request::is('account/game') ? 'class="active"' : '') }}><a href="{{ URL::to('account/game') }}">Game</a></li>
                                     </ul>
                                 </li>
                             @endif

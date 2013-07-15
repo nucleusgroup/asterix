@@ -9029,3 +9029,5 @@ body {
   h2,
   h3 {
     page-break-after: avoid; } }
+.captcha_example{background:#FFF;width:865px;font-size:80%;border:1px #000 solid;margin:0.5em 10% 0.5em;padding:1em 2em 2em;-moz-border-radius: 3px;-webkit-border-radius: 3px}
+.lines{margin:10px 0}
