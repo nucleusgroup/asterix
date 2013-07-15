@@ -18,3 +18,11 @@ body {
   font-size:36px;
   -webkit-font-smoothing:antialiased;
 }
+#textDiv1 span{
+  display:inline-block;
+  position:relative;
+  top:20px;
+  visibility:hidden;
+  font-size:36px;
+  -webkit-font-smoothing:antialiased;
+}
