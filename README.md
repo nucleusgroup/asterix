@@ -26,8 +26,7 @@ hai welcome to demo..
 
 
 
-features:
-krishna
+uses:
 code reusability
 no server burden 
 less code
