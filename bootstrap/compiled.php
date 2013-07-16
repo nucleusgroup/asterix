@@ -298,7 +298,6 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
     protected $serviceProviders = array();
     protected $loadedProviders = array();
     protected $deferredServices = array();
-    protected static $requestClass = 'Illuminate\\Http\\Request';
     public function __construct(Request $request = null)
     {
         $this['request'] = $this->createRequest($request);
@@ -308,13 +307,12 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
     }
     protected function createRequest(Request $request = null)
     {
-        return $request ?: static::onRequest('createFromGlobals');
+        return $request ?: Request::createFromGlobals();
     }
     public function setRequestForConsoleEnvironment()
     {
         $url = $this['config']->get('app.url', 'http://localhost');
-        $parameters = array($url, 'GET', array(), array(), array(), $_SERVER);
-        $this->instance('request', static::onRequest('create', $parameters));
+        $this->instance('request', Request::create($url, 'GET', array(), array(), array(), $_SERVER));
     }
     public function redirectIfTrailingSlash()
     {
@@ -336,7 +334,7 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
     }
     public static function getBootstrapFile()
     {
-        return 'D:\\new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation' . '/start.php';
+        return 'D:\\shankar\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation' . '/start.php';
     }
     public function startExceptionHandling()
     {
@@ -587,17 +585,6 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
     public function setDeferredServices(array $services)
     {
         $this->deferredServices = $services;
-    }
-    public static function requestClass($class = null)
-    {
-        if (!is_null($class)) {
-            static::$requestClass = $class;
-        }
-        return static::$requestClass;
-    }
-    public static function onRequest($method, $parameters = array())
-    {
-        return forward_static_call_array(array(static::requestClass(), $method), $parameters);
     }
     public function __get($key)
     {
@@ -2165,12 +2152,7 @@ class NativeSessionStorage implements SessionStorageInterface
         if ($destroy) {
             $this->metadataBag->stampNew();
         }
-        $ret = session_regenerate_id($destroy);
-        session_write_close();
-        $backup = $_SESSION;
-        session_start();
-        $_SESSION = $backup;
-        return $ret;
+        return session_regenerate_id($destroy);
     }
     public function save()
     {
@@ -3098,9 +3080,9 @@ abstract class ServiceProvider
         }
         return $namespace;
     }
-    public function commands($commands)
+    public function commands()
     {
-        $commands = is_array($commands) ? $commands : func_get_args();
+        $commands = func_get_args();
         $events = $this->app['events'];
         $events->listen('artisan.start', function ($artisan) use($commands) {
             $artisan->resolveCommands($commands);
@@ -5549,8 +5531,7 @@ abstract class Model implements ArrayAccess, ArrayableInterface, JsonableInterfa
     {
         $query = $this->newQuery()->where($this->getKeyName(), $this->getKey());
         if ($this->softDelete) {
-            $this->{static::DELETED_AT} = $time = $this->freshTimestamp();
-            $query->update(array(static::DELETED_AT => $time));
+            $query->update(array(static::DELETED_AT => $this->freshTimestamp()));
         } else {
             $query->delete();
         }
@@ -7963,7 +7944,7 @@ class Route extends BaseRoute
     }
     public function setBeforeFilters($value)
     {
-        $filters = $this->parseFilterValue($value);
+        $filters = is_string($value) ? explode('|', $value) : (array) $value;
         $this->setOption('_before', array_merge($this->getBeforeFilters(), $filters));
     }
     public function getAfterFilters()
@@ -7972,16 +7953,8 @@ class Route extends BaseRoute
     }
     public function setAfterFilters($value)
     {
-        $filters = $this->parseFilterValue($value);
+        $filters = is_string($value) ? explode('|', $value) : (array) $value;
         $this->setOption('_after', array_merge($this->getAfterFilters(), $filters));
-    }
-    protected function parseFilterValue($value)
-    {
-        $results = array();
-        foreach ((array) $value as $filters) {
-            $results = array_merge($results, explode('|', $filters));
-        }
-        return $results;
     }
     public function setParameters($parameters)
     {
@@ -9878,18 +9851,15 @@ class Run
             }
         }
         $output = ob_get_clean();
-        if ($this->writeToOutput()) {
-            if ($handlerResponse == Handler::QUIT && $this->allowQuit()) {
-                while (ob_get_level() > 0) {
-                    ob_end_clean();
-                }
-            }
+        if ($this->allowQuit()) {
             echo $output;
-        }
-        if ($handlerResponse == Handler::QUIT && $this->allowQuit()) {
             die;
+        } else {
+            if ($this->writeToOutput()) {
+                echo $output;
+            }
+            return $output;
         }
-        return $output;
     }
     public function handleError($level, $message, $file = null, $line = null)
     {
@@ -9980,7 +9950,7 @@ class PrettyPageHandler extends Handler
             return Handler::DONE;
         }
         if (!($resources = $this->getResourcesPath())) {
-            $resources = 'D:\\new\\vendor\\filp\\whoops\\src\\Whoops\\Handler' . '/../Resources';
+            $resources = 'D:\\shankar\\vendor\\filp\\whoops\\src\\Whoops\\Handler' . '/../Resources';
         }
         $templateFile = "{$resources}/pretty-template.php";
         $cssFile = "{$resources}/pretty-page.css";
